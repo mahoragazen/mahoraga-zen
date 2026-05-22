@@ -1,0 +1,72 @@
+# Dependencies and environment
+node_modules/
+venv/
+.env
+.env.local
+.env.*.local
+*.lock
+yarn.lock
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build outputs
+dist/
+build/
+*.zip
+*.tar.gz
+
+# Runtime
+*.log
+*.pid
+cache/
+cron/
+checkpoints/
+
+# Project-specific (exclude other projects)
+agents/
+archive/
+audio_cache/
+bin/
+bots/
+core/
+documents/
+hermes/
+hermes-agent/
+knowledge_base/
+projects/
+scripts/
+simulators/
+tools/
+website/
+website-agency/
+website_images/
+youtube-cli/
+claudeAgent/
+claude-agent/
+home/
+03_Admin/
+03_Admin/
+Gemini pic/
+MiroFish/
+Obsidian/
+Claude Skills Ultimate Bundle/
+GNAS_Database/
+ไฟล์แผนสร้างเว็บ/
+
+# Document files (not part of web)
+*.docx
+*.xlsx
+*.csv
+*.mp4
+
+# Keep only web-related files
+!index.html
+!src/
+!assets/
+!.gitignore
