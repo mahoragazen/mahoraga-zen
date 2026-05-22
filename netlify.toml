@@ -1,0 +1,27 @@
+# Netlify Configuration for Mahoraga ZEN
+
+[build]
+  # No build step needed - static HTML + inline React
+  publish = "."
+  command = "echo 'Static site - no build needed'"
+
+# Redirect all 404s to index.html (for SPA behavior)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache settings
+[cache]
+  skip = false
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "max-age=3600"
+
+[[headers]]
+  for = "/*.{js,css,png,jpg,jpeg,gif,svg,woff,woff2}"
+  [headers.values]
+    Cache-Control = "max-age=31536000, immutable"
