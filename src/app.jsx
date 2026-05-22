@@ -117,6 +117,7 @@ function App() {
       <div data-parallax-host>
         <Newsletter />
       </div>
+      <Disclaimer />
       <Footer />
 
       <CartDrawer
