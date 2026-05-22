@@ -118,6 +118,7 @@ function App() {
         <Newsletter />
       </div>
       <Disclaimer />
+      <Privacy />
       <Footer />
 
       <CartDrawer

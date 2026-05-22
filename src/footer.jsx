@@ -101,9 +101,9 @@ function Footer() {
           <div className="m-foot-copy">
             <span>© ๒๕๖๗ Mahoraga ZEN · บริษัท มโหราคะเซน จำกัด</span>
             <span className="display gold-text">·</span>
-            <a href="#">นโยบายความเป็นส่วนตัว</a>
+            <a href="#privacy">นโยบายความเป็นส่วนตัว</a>
             <span className="display gold-text">·</span>
-            <a href="#">ข้อกำหนดการใช้งาน</a>
+            <a href="#disclaimer">ข้อสงวนสิทธิ์</a>
           </div>
           <p className="display m-foot-blessing">
             ✦ May your inner stillness move mountains ✦
