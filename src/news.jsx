@@ -1,4 +1,9 @@
-// news.jsx — Merit events feed (ข่าวสารงานบุญ)
+// news.jsx — Merit events feed (บอกบุญ - informational only)
+//
+// IMPORTANT — LEGAL DISCLAIMER:
+// เว็บไซต์นี้เป็น "ผู้บอกบุญ" (informational) เท่านั้น
+// ไม่รับบริจาคโดยตรง — ผู้ใช้ต้องติดต่อวัด/องค์กรปลายทางเอง
+// ห้ามใช้ wording ที่ทำให้คนเข้าใจผิดว่าจ่ายผ่านเว็บไซต์
 
 const { useState: useStateNw } = React;
 
@@ -14,8 +19,8 @@ const EVENTS = [
     summary: "ค่ายปฏิบัติธรรมพร้อมพระอาจารย์ผู้เชี่ยวชาญ ในบรรยากาศป่าธรรมชาติ เหมาะสำหรับมือใหม่ — ที่พักและอาหารฟรี",
     spots: 8,
     spotsTotal: 30,
-    fee: "ฟรี (รับบริจาคตามศรัทธา)",
-    type: "register",
+    fee: "ฟรี · ติดต่อวัดโดยตรง",
+    type: "info",
     href: "#",
     image: "buddha-sitting",
   },
@@ -25,10 +30,10 @@ const EVENTS = [
     place: "วัดบวรนิเวศวิหาร · กรุงเทพมหานคร",
     date: { d: 19, m: 11 },
     dateEnd: null,
-    summary: "งานทอดกฐินประจำปี ๒๕๖๗ ร่วมกันสร้างมหากุศล ผู้ใจบุญร่วมเป็นเจ้าภาพ ทำบุญด้วยใจอนุโมทนา",
+    summary: "บอกข่าว: งานทอดกฐินประจำปี ๒๕๖๗ — ติดต่อวัดบวรนิเวศวิหารโดยตรงเพื่อร่วมบุญ",
     spots: null,
-    fee: "ตามศรัทธา",
-    type: "donate",
+    fee: "ติดต่อวัดโดยตรง",
+    type: "info",
     href: "#",
     image: "ganesha-sitting",
   },
@@ -52,11 +57,11 @@ const EVENTS = [
     place: "วัดญาณเวศกวัน · จังหวัดนครปฐม",
     date: { d: 14, m: 7 },
     dateEnd: null,
-    summary: "พิธีศักดิ์สิทธิ์ ๓ ทศวรรษพระอาจารย์ ผู้ร่วมพิธีจะได้รับเหรียญที่ระลึก พร้อมการบริจาคเพื่อสร้างศาลาปฏิบัติธรรม",
+    summary: "บอกข่าว: พิธีเททองหล่อพระพุทธรูป — ผู้ร่วมพิธีจะได้รับเหรียญที่ระลึก รายละเอียดเพิ่มเติมติดต่อวัด",
     spots: 80,
     spotsTotal: 300,
-    fee: "เริ่ม ๑,๙๙๙ บาท",
-    type: "register",
+    fee: "ติดต่อวัดโดยตรง",
+    type: "info",
     href: "#",
     image: "hero-ganesh",
   },
@@ -127,12 +132,15 @@ function News() {
 
       <div className="wrap">
         <div className="section-head reveal">
-          <span className="eyebrow">ข่าวสาร · งานบุญ</span>
+          <span className="eyebrow">บอกบุญ · ข่าวสาร</span>
           <TripleDivider />
           <h2><em>วาระบุญ</em><br />ที่ใกล้คุณ ที่สุด</h2>
           <p className="lede">
             รวมข่าวงานบุญ ปฏิบัติธรรม กฐิน-ผ้าป่า จากวัดสำคัญทั่วประเทศ
-            — เลือกงานที่ใจชอบ แล้วร่วมเป็นส่วนหนึ่งของบุญใหญ่
+            — เลือกงานที่ใจชอบ แล้ว <strong>ติดต่อวัดโดยตรง</strong> เพื่อร่วมบุญ
+          </p>
+          <p className="muted" style={{ fontSize: 13, marginTop: 8, fontStyle: "italic" }}>
+            * เว็บไซต์นี้เป็นเพียงผู้บอกบุญ (informational) ไม่รับบริจาคโดยตรง
           </p>
         </div>
 
@@ -195,8 +203,8 @@ function News() {
                   )}
                 </div>
 
-                <a href={e.href} className={`btn btn--sm ${e.type === "donate" ? "btn--gold" : "btn--ghost"} m-nw-cta`}>
-                  {e.type === "donate" ? "ร่วมบริจาค" : "ลงทะเบียนเข้าร่วม"}
+                <a href={e.href} className="btn btn--sm btn--ghost m-nw-cta">
+                  ดูรายละเอียด · ติดต่อวัด
                   <span aria-hidden="true">→</span>
                 </a>
               </div>

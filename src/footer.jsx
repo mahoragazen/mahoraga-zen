@@ -89,6 +89,14 @@ function Footer() {
           <span></span>
         </div>
 
+        <div className="m-foot-disclaimer">
+          <p>
+            <strong>หมายเหตุสำคัญ:</strong> Mahoraga ZEN เป็นเว็บไซต์ให้ข้อมูลบอกบุญ (informational platform)
+            — <strong>ไม่รับบริจาคโดยตรง</strong> รายได้ของเว็บไซต์มาจากค่าสมาชิก สินค้าดิจิทัล และค่าบริการเท่านั้น
+            ผู้ที่ประสงค์ทำบุญต้องติดต่อวัด / องค์กรปลายทางโดยตรง
+          </p>
+        </div>
+
         <div className="m-foot-bottom">
           <div className="m-foot-copy">
             <span>© ๒๕๖๗ Mahoraga ZEN · บริษัท มโหราคะเซน จำกัด</span>
@@ -243,6 +251,24 @@ function Footer() {
           letter-spacing: .14em;
           font-size: 13px;
           color: var(--gold-soft);
+        }
+        .m-foot-disclaimer {
+          margin: 24px 0 16px;
+          padding: 16px 20px;
+          border: 1px solid rgba(232,211,138,.22);
+          border-radius: 2px;
+          background: rgba(232,211,138,.04);
+        }
+        .m-foot-disclaimer p {
+          font-size: 12.5px;
+          line-height: 1.7;
+          color: rgba(253,252,248,.7);
+          text-align: center;
+          margin: 0;
+        }
+        .m-foot-disclaimer strong {
+          color: var(--gold-soft);
+          font-weight: 500;
         }
       `}</style>
     </footer>
