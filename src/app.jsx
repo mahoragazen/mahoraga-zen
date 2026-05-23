@@ -88,6 +88,9 @@ function App() {
         <Hero />
       </div>
       <div data-parallax-host>
+        <About />
+      </div>
+      <div data-parallax-host>
         <Features />
       </div>
       <div data-parallax-host>
@@ -115,10 +118,12 @@ function App() {
         <Testimonials />
       </div>
       <div data-parallax-host>
-        <Newsletter />
+        <Faq />
       </div>
       <Disclaimer />
       <Privacy />
+      <Terms />
+      <Cookie />
       <Footer />
 
       <CartDrawer
