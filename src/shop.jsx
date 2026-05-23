@@ -9,7 +9,7 @@ const SHOP_ITEMS = [
     desc: "หินอะเกตดำธรรมชาติ ขัดเงาด้วยมือ พร้อมพู่ไหมทอง — ใช้สำหรับท่องบทสวด หรือพกพาในกระเป๋า",
     price: "฿1,290",
     vendor: "Shopee",
-    href: "#",
+    href: "https://s.shopee.co.th/809hmZJb6e",
     ornament: "om",
     tone: "ink",
   },
@@ -20,8 +20,8 @@ const SHOP_ITEMS = [
     nameEn: "Sandalwood & Agarwood Incense",
     desc: "ผลิตที่อินเดีย ส่วนผสมจันทน์ไม้แท้และกฤษณา จุดได้ ๔๕–๖๐ นาทีต่อก้าน — ใช้ก่อนสมาธิ",
     price: "฿390",
-    vendor: "Lazada",
-    href: "#",
+    vendor: "Shopee",
+    href: "https://s.shopee.co.th/6VKu0LByfk",
     ornament: "lotus",
     tone: "gold",
   },
@@ -32,8 +32,8 @@ const SHOP_ITEMS = [
     nameEn: "Tao Te Ching · Thai Translation",
     desc: "หนังสือคำสอนเล่าจื๊อ ๘๑ บท แปลโดยอาจารย์ผู้เชี่ยวชาญ — หนังสือเล่มหลักที่เราแนะนำ",
     price: "฿420",
-    vendor: "Naiin",
-    href: "#",
+    vendor: "Shopee",
+    href: "https://s.shopee.co.th/5L8wcNbH32",
     ornament: "seed",
     tone: "cream",
   },
@@ -44,34 +44,46 @@ const SHOP_ITEMS = [
     nameEn: "Zafu Meditation Cushion · Cotton",
     desc: "เบาะกลม ผ้าฝ้ายอินทรีย์ ยัดด้วยเมล็ดบักวีต — รองรับกระดูกสันหลังให้ตรง นั่งได้นานโดยไม่ปวด",
     price: "฿1,490",
-    vendor: "Lazada",
-    href: "#",
+    vendor: "Shopee",
+    href: "https://s.shopee.co.th/9zumBBVS5B",
     ornament: "mandala",
     tone: "ink",
   },
   {
-    cat: "ของขวัญ",
-    catEn: "Sacred Gifts",
-    name: "กำยานแท่งทองคำเปลว วัดพระแก้ว",
-    nameEn: "Gold-Leaf Incense Sticks",
-    desc: "กำยานหายาก ห่อด้วยทองคำเปลว ใช้ในพิธีศักดิ์สิทธิ์ — ของขวัญสำหรับโอกาสพิเศษ",
-    price: "฿2,890",
-    vendor: "Local Boutique",
-    href: "#",
-    ornament: "om",
+    cat: "ธูป & กำยาน",
+    catEn: "Resin Incense",
+    name: "กำยานอินเดีย แท้ ๑๐๐% · ๗ กลิ่น (๒๕ เม็ด)",
+    nameEn: "Indian Resin Incense · 7 Scents · 25 Pieces",
+    desc: "กำยานแท้นำเข้าจากอินเดีย มี ๗ กลิ่นให้เลือก ๑ ห่อมี ๒๕ เม็ด — เผาบนถ่านใช้ในพิธีกรรมและนั่งสมาธิ",
+    price: "฿150",
+    vendor: "Shopee",
+    href: "https://s.shopee.co.th/8fPOaqKdeZ",
+    ornament: "lotus",
     tone: "gold",
+  },
+  {
+    cat: "อุปกรณ์สมาธิ",
+    catEn: "Incense Burner",
+    name: "เชิงกำยานควันน้ำตก + กำยานฟรี ๑๐ ดอก",
+    nameEn: "Backflow Incense Burner · 10 Cones Included",
+    desc: "เชิงกำยานดีไซน์ควันน้ำตกไหลลง สวยงามระหว่างนั่งสมาธิ — แถมฟรีกำยานน้ำตก ๑๐ ดอก",
+    price: "฿299",
+    vendor: "Shopee",
+    href: "https://s.shopee.co.th/9UyVaQpJYn",
+    ornament: "mandala",
+    tone: "cream",
   },
   {
     cat: "เครื่องประดับ",
     catEn: "Jewelry",
-    name: "สร้อยข้อมือ ลูกประคำหิน + เงินแท้",
-    nameEn: "Silver-Capped Stone Bracelet",
-    desc: "สร้อยข้อมือลูกประคำหินภูเขาไฟ ตัวล็อกเงินแท้ ๙๒๕ — ใส่ติดตัวเพื่อเตือนสติทุกขณะ",
-    price: "฿890",
+    name: "หินแม่เหล็กเงิน ลูกประคำสร้อยคอ",
+    nameEn: "Silver Magnetic Stone Mala Necklace",
+    desc: "สร้อยคอลูกประคำหินแม่เหล็กเงิน — พลังงานสมดุล ใส่ติดตัวเพื่อเตือนสติและดึงดูดสิ่งดีงาม",
+    price: "฿390",
     vendor: "Shopee",
-    href: "#",
+    href: "https://s.shopee.co.th/8fPOazGrix",
     ornament: "lotus",
-    tone: "cream",
+    tone: "ink",
   },
 ];
 
@@ -140,10 +152,6 @@ function Shop() {
                 <p className="m-shop-desc">{it.desc}</p>
 
                 <div className="m-shop-foot">
-                  <div className="m-shop-price">
-                    <span className="display gold-text" style={{ fontSize: 12 }}>เริ่มต้น</span>
-                    <span className="serif mono-num m-shop-amount">{it.price}</span>
-                  </div>
                   <a
                     href={it.href}
                     target="_blank"
@@ -151,7 +159,7 @@ function Shop() {
                     className="m-shop-link"
                     aria-label={`ดู ${it.name} ที่ ${it.vendor}`}
                   >
-                    <span>ดูที่ร้าน</span>
+                    <span>ดูราคา & สั่งซื้อ</span>
                     <ExternalIcon />
                   </a>
                 </div>
@@ -292,38 +300,21 @@ function Shop() {
         }
 
         .m-shop-foot {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 12px;
           padding-top: 18px;
           border-top: 1px solid var(--line);
         }
-        .m-shop-price {
-          display: flex;
-          flex-direction: column;
-          gap: 2px;
-        }
-        .m-shop-price .gold-text {
-          font-style: italic;
-          letter-spacing: .04em;
-        }
-        .m-shop-amount {
-          font-size: 24px;
-          font-weight: 500;
-          color: var(--ink);
-          line-height: 1;
-        }
         .m-shop-link {
-          display: inline-flex;
+          display: flex;
           align-items: center;
+          justify-content: center;
           gap: 8px;
-          padding: 11px 16px;
+          width: 100%;
+          padding: 13px 16px;
           background: var(--ink);
           color: var(--cream);
           border: 1px solid var(--ink);
           text-decoration: none;
-          font-size: 12.5px;
+          font-size: 13px;
           font-weight: 500;
           letter-spacing: .12em;
           transition: all .3s var(--ease-zen);
